@@ -1,0 +1,346 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px #0a7878;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px #474747;
+  background-color: #474747;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #343434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.post-sec {
+  padding-top: 310px;
+  padding-bottom: 2000px;
+  background-color: #111111;
+}
+
+.post-sec__wrapper {
+  max-width: 1260px;
+  margin: auto;
+  overflow: auto;
+  display: -webkit-box;
+}
+
+.post-sec__wrapper--grids {
+  width: 370px;
+  border: 1px solid yellow;
+  color: white;
+}
+
+.post-sec__wrapper--grids:nth-child(1) {
+  margin-left: 30px;
+}
+
+.post-sec__wrapper--grids:nth-child(2) {
+  margin-left: 40px;
+}
+
+.post-sec__wrapper--grids:nth-child(3) {
+  margin-left: 40px;
+}
+
+.post-wrap {
+  width: 370px;
+}
+
+.post-wrap .post-wrap__title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-wrap .post-wrap__title a {
+  text-decoration: none;
+  color: white;
+}
+
+.post-wrap .post-wrap__title a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/*post-tranformation*/
+.resize {
+  padding-top: 174px;
+}
+
+.post-sec {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.header {
+  height: 270px;
+  *zoom: 1;
+  width: 100%;
+  background: #F0F8FF;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header:after, .header:before {
+  content: " ";
+  display: table;
+}
+
+.header:after {
+  clear: both;
+}
+
+.header-container {
+  max-width: 100%;
+  background-color: black;
+  height: 210px;
+  background-image: url(/assets/i/bg/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.header-container__wrapper {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.header-container__wrapper--logo {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-left: 29px;
+  margin-top: 29px;
+}
+
+.header-container__wrapper--logo img {
+  height: 25px;
+}
+
+.header-container__wrapper--account {
+  float: right;
+}
+
+.header-container__wrapper--headline {
+  position: absolute;
+  width: 500px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+.header-container__wrapper--headline span {
+  display: inline-block;
+  margin: 67px auto 0 auto;
+}
+
+.header-container .account-opt {
+  margin-top: 24px;
+  margin-right: 29px;
+}
+
+.header-container .account-opt__list {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-container .account-opt__list a {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 6px 16px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.header-container .account-opt__list a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header-container .account-opt__list .has--margin {
+  margin-right: 15px;
+}
+
+/*header-container-transformations*/
+.small {
+  height: 140px;
+}
+
+.small .header-container__wrapper--headline-title {
+  margin-top: 12px;
+}
+
+.small .header-container {
+  height: 80px;
+}
+
+header, .header-container__wrapper--headline-title, .header-container {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.header-navigation {
+  background-color: #232323;
+}
+
+.header-navigation__wrapper {
+  height: 60px;
+  max-width: 1250px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-navigation__wrapper--menu {
+  list-style-type: none;
+}
+
+.header-navigation__wrapper--menu li {
+  display: inline-block;
+  margin-left: -4.4px;
+}
+
+.header-navigation__wrapper--menu li:nth-child(8) a {
+  border-right: 0 solid #434343;
+}
+
+.header-navigation__wrapper--menu li:nth-child(2) i {
+  display: block;
+}
+
+.header-navigation__wrapper--menu li a {
+  display: block;
+  padding: 19px 45px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  border-right: 0.5px solid #434343;
+}
+
+.header-navigation__wrapper--menu li a:hover ~ i {
+  display: block;
+}
+
+.header-navigation__wrapper--menu li a img {
+  height: 15px;
+}
+
+.header-navigation__wrapper--menu li a .dd-arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 6px 0 0 8px;
+  float: right;
+}
+
+.header-navigation__wrapper--menu li i {
+  width: 100%;
+  display: block;
+  height: 5px;
+  margin-top: -5px;
+  background: #707070;
+  display: none;
+}
+
+.header-navigation__wrapper--menu li .dd-content {
+  display: none;
+  position: absolute;
+  background-color: #1c1c1c;
+  width: 223px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+  font-weight: 500;
+  margin-left: -40px;
+  animation: 0.2s comedown ease-in;
+}
+
+.header-navigation__wrapper--menu li .dd-content a {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.header-navigation__wrapper--menu li .dd-content a:nth-child(1) {
+  margin-top: 10px;
+}
+
+.header-navigation__wrapper--menu li .dd-content a:nth-child(4) {
+  margin-bottom: 10px;
+}
+
+@keyframes comedown {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 180px;
+  }
+}
+
+.header-navigation__wrapper--menu li .show {
+  display: block;
+}
+
+.footer {
+  border-top: 1px solid #434343;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #222;
+}
+
+.footer__container {
+  margin: auto;
+  text-align: center;
+  max-width: 1190px;
+}
+
+.footer__container--menu {
+  padding: 11px 10px;
+}
+
+.footer__container--menu li {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 9px;
+}
+
+@media screen and (max-width: 620px) {
+  .footer__container--menu li {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+}
+
+.footer__container--menu li a {
+  text-decoration: none;
+  color: #999;
+}
+
+.footer__container--menu li a:hover {
+  text-decoration: underline;
+}
